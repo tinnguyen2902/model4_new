@@ -1,0 +1,26 @@
+// tạo các class
+// 1. ở main chính tạo liên kết link
+// 2.tạo các giá trị trong class Author => contruction, get, set
+//3. Ở class AuthorRepository
+// bên ngoài class dùng @Repository để đánh dấu tầng truy xuất dữ liệu
+// bên trong class
+// + khai báo danh sách lưu trữ
+// + tạo dữ liệu bằng contraction
+// + trả về danh sách
+=> xong tới đây là như xong khâu hiển thị
+4. tiếp theo ở class AuthorService
+4.1.@Service   // đóng vai trò tầng nghiệp vụ trung gian
+4.2 @Autowired  // tiêm phụ thuộc
+4.3 Kết nối với AuthorRepository
+4.4 tạo hàm gọi sang Repository
+5. viết GET trong Controller
+5.1 nhất định phải có 2 @ này bên ngoài class
+@RestController  // giúp nhận yêu cầu rồi gọi sang Servise
+@RequestMapping("/api/authors") => đường link này thêm vào sao 8080 nhập vào post man
+5.2 bên trong class
+@Autowired
+5.3 Kết nối với AuthorRepository
+5.4 dùng @GetMapping
+pulic + return
+=> tới đây xong get vào postman ok
+
