@@ -23,4 +23,9 @@
 //5.4 dùng @GetMapping
 //pulic + return
 //=> tới đây xong get vào postman ok
+//***CHỨC NĂNG CẬP NHẬT
+// 1. Repository
+// phương thức save
+// 2. Servise
+// Viết phương thức Author createAuthor
 //

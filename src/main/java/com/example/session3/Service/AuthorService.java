@@ -16,5 +16,16 @@ public class AuthorService {
     public List<Author> getAllAuthors(){
         return authorRepository.findAll();
     }
-
+    // cập nhật
+    public Author createAuthor(Author author){
+        authorRepository.save(author);
+        return author;
+    }
+    public Author getAuthorById(Author author){
+        //1. gọi Repository để lưu vào Array
+        authorRepository.save(author);
+        //2. log ra
+        System.out.println("Lưu ok");
+        return author;
+    }
 }

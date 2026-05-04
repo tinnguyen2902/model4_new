@@ -21,4 +21,9 @@ public class AuthorRepository {
     public List<Author> findAll(){
         return authors;
     };
+    // cập nhật
+    public void save(Author author){
+      authors.add(author);
+        System.out.println("thêm thành công");
+    };
 }
